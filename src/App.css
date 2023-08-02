@@ -192,9 +192,7 @@
         display: flex;
         justify-content: space-between;
     }
-    /* .container-element li {
-        width: 100px;
-    } */
+
     .container-element button {
         width: 30px;
         height: 30px;
@@ -202,7 +200,7 @@
         margin-right: 0px;
     }
     .screen {
-        width: 140px;
+        width: 141px;
     }
     .first-word-item {
         margin-right: 10px;
