@@ -1,0 +1,183 @@
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.link_all {
+    list-style: none;
+    text-decoration: underline;
+    margin: 0 10px 0 10px;
+    font-size: 18px;
+    padding: 5px 0 5px 0;
+}
+
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+.container_item_all {
+    border: 1px solid rgba(0, 0, 0, 0.244);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search_input {
+    height: 100%;
+    width: 85%;
+    background-color: transparent;
+    padding-left: 20px;
+    /* min-width: 250px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.264);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+    padding: 4px 4px 4px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.416);
+    font-size: 18px; */
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+}
+.search {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.271);
+    margin-bottom: 20px;
+
+    min-width: 250px;
+    max-width: 300px;
+    height: 40px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+
+    border: 2px solid rgba(255, 255, 255, 0.416);
+}
+
+.search_input::placeholder {
+    color: rgba(49, 39, 44, 0.77);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.has_text {
+    border: none; /* Приховуємо бордер */
+}
+.btn_x {
+    width: 40px;
+    list-style: none;
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 0.3) 0%,
+        rgba(253, 29, 29, 0.4010854341736695) 50%,
+        rgba(252, 176, 69, 0.2) 100%
+    );
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+    padding: 4px 4px 4px 4px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(131, 131, 131, 0.37);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: 0.2s ease-in;
+}
+.btn_x:hover {
+    border: 1px solid rgba(0, 0, 0, 0.399);
+    transition: 0.2s ease-in;
+    transform: scale(1.05);
+}
+
+.to_other_state {
+    width: 50px;
+    list-style: none;
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 0.3) 0%,
+        rgba(253, 29, 29, 0.4010854341736695) 50%,
+        rgba(252, 176, 69, 0.2) 100%
+    );
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+    padding: 4px 4px 4px 4px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(131, 131, 131, 0.37);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: 0.2s ease-in;
+}
+.to_other_state:hover {
+    border: 1px solid rgba(0, 0, 0, 0.399);
+    transition: 0.2s ease-in;
+    transform: scale(1.05);
+}
+
+.selector_box {
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    list-style: none;
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 0.3) 0%,
+        rgba(253, 29, 29, 0.4010854341736695) 50%,
+        rgba(252, 176, 69, 0.2) 100%
+    );
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+    padding: 4px 4px 4px 4px;
+    border-radius: 5px;
+    border: 1px solid rgba(131, 131, 131, 0.37);
+    cursor: pointer;
+    color: rgba(49, 39, 44, 0.77);
+
+    transition: 0.2s ease-in;
+    padding: 10px;
+    line-height: 1.5;
+}
+.option_box {
+    background-color: rgba(255, 255, 255, 0.39);
+    color: rgba(0, 0, 0, 0.597);
+    font-size: 16px;
+    padding: 10px;
+}
+
+.sortArray {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(49, 39, 44, 0.77);
+}
+
+.error_text {
+    color: rgba(49, 39, 44, 0.77);
+}
+
+.action_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 805px) {
+    .action_container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 506px) {
+    .container_item_all button {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .action_container {
+        display: flex;
+    }
+    .sortArray {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

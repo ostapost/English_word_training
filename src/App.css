@@ -1,38 +1,286 @@
 .App {
-  text-align: center;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-element {
+    display: flex;
+    margin: 0px 0 10px 0;
+}
+.first-word-item {
+    width: 150px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.264);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+    padding: 4px 4px 4px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.416);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.green {
+    border: 3px solid green;
+    outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.red {
+    border: 3px solid red;
+    outline: none;
+}
+.display-none {
+    display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.color1 {
+    width: 150px;
+    list-style: none;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+    padding: 4px 4px 4px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 251, 0, 0.605);
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.416);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.color2 {
+    width: 150px;
+    list-style: none;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+    padding: 4px 4px 4px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 98, 0, 0.581);
+    color: white;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.416);
+}
+.color3 {
+    width: 150px;
+    list-style: none;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+    padding: 4px 4px 4px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: rgba(34, 255, 0, 0.619);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.416);
+}
+.color4 {
+    width: 150px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.604);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+    padding: 4px 4px 4px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.718);
+    color: white;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.416);
+}
+
+.textError {
+    margin-top: 10px;
+    color: red;
+}
+
+.width_600-1 {
+    display: flex;
+}
+.width_600-2 {
+    display: flex;
+}
+
+.create_btn {
+    height: 37px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 0.3) 0%,
+        rgba(253, 29, 29, 0.4010854341736695) 50%,
+        rgba(252, 176, 69, 0.2) 100%
+    );
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.274);
+    padding: 4px 10px 4px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(131, 131, 131, 0.37);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: 0.2s ease-in;
+    margin: 10px 10px 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(49, 39, 44, 0.57);
+}
+@media screen and (max-width: 1400px) {
+    .App {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+    .main {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .App {
+        width: 800px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    .App {
+        width: 600px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    .width_600-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .width_600-1 button {
+        width: 150px;
+    }
+    .width_600-2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-element {
+        height: 80px;
+    }
+}
+@media screen and (max-width: 605px) {
+    .App {
+        width: 500px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .container-element {
+        height: 50px;
+    }
+    .width_600-1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .width_600-1 button {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 506px) {
+    .App {
+        width: 426px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .container-element {
+        height: 40px;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* .container-element li {
+        width: 100px;
+    } */
+    .container-element button {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        margin-right: 0px;
+    }
+    .screen {
+        width: 140px;
+    }
+    .first-word-item {
+        margin-right: 10px;
+    }
+    .create_input {
+        display: flex;
+        justify-content: space-between;
+    }
+    .create_input input {
+        width: 180px;
+    }
+    .create_btn {
+        width: 100%;
+        text-align: center;
+    }
+    .input-and-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .App {
+        width: 356px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .main {
+        width: 100%;
+        padding: 0;
+    }
+    .first-word-item {
+        font-size: 14px;
+        width: 120px;
+    }
+    .create_input {
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+        margin-bottom: 20px;
+    }
+    .input-and-button {
+        display: flex;
+        justify-content: space-between;
+    }
+    .create_btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 50px;
+        width: 160px;
+        margin: 0;
+    }
+    .textError {
+        position: absolute;
+        right: 0;
+        top: 55px;
+    }
+
+    .btn-and-error_text {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .input-and-button {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .hyunia {
+        padding: 5px;
+        background-color: #e080be24;
+        box-shadow: 2px 2px 122px 15px rgba(255, 255, 255, 0.578);
+    }
+    .main {
+        /* background-color: transparent;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.578);
+        padding: 5px;
+        border: 0px solid; */
+    }
 }
